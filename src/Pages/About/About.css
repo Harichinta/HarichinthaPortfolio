@@ -1,0 +1,114 @@
+.aboutmain {
+    position: relative;
+    padding-top: 9rem;
+    overflow-x: hidden;
+    background-color: var(--alt-sec-color);
+}
+
+.aboutcontain {
+    color: var(--primary-text-color);
+    min-height: 400px;
+    padding-bottom: 6rem;
+    height: 100%;
+    z-index: 20;
+}
+
+.abouthead {
+    font-size: 30px;
+    text-align: center;
+    /* text-decoration: underline; */
+    /* text-decoration-color:var(--secondry-text-color); */
+    /* text-decoration-color:orange; */
+    text-decoration-thickness: 3px;
+    letter-spacing: 4px;
+}
+
+.aboutsub h4 {
+    text-align: center;
+}
+
+.card {
+    color: var(--primary-color);
+    background-color: var(--card-color);
+    margin-top: 4rem;
+    padding: 14px 5px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    background-color: #161130;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+.card h4 {
+    color: orange;
+}
+
+.aboutsub span {
+    padding: 10px;
+}
+
+.subcard li {
+    list-style-type: none;
+    position: relative;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    color: var(--primary-text-color);
+}
+
+.subcard ul {
+    position: relative;
+    padding-left: 20px;
+    margin-top: 0.8rem;
+}
+
+.subcard ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: orange;
+}
+
+.subcard ul li:not(:last-child):after {
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 10px;
+    width: 2px;
+    height: 100%;
+    background-color: orange;
+    transform: translateY(14%);
+}
+
+
+
+@media (max-width: 768px) {
+    .aboutrow {
+        padding: 24px;
+        padding-top: 0 !important;
+    }
+
+    .aboutcontain {
+        padding-bottom: 0rem;
+    }
+
+    .aboutmain {
+        padding-top: 2rem;
+        padding: 2rem 5px 5px 5px;
+    }
+
+    .subcard ul {
+        padding-left: 4px;
+    }
+
+    .card {
+        margin-top: 2rem;
+    }
+
+    .abouthead {
+        font-size: 30px !important;
+    }
+
+}

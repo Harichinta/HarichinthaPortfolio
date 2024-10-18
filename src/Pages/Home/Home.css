@@ -1,0 +1,256 @@
+.maincontainer {
+    padding: 6rem 0 4rem 0;
+    color: var(--primary-text-color);
+    position: relative;
+}
+
+.layer {
+    transform: rotate(-8deg);
+    position: absolute;
+    top: 0;
+    left: -5rem;
+    background-color: var(--alt-sec-color);
+    height: 100%;
+    width: 150%;
+}
+
+.Hi {
+    color: var(--secondry-text-color);
+}
+
+.herosection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resumedownload{
+    padding: 10px 20px;    
+    background-color: var(--secondry-text-color);
+    border: 1px solid var(--secondry-text-color);
+    cursor: pointer;
+}
+
+.resumedownload a{
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    /* color: var(--primary-text-color); */
+    font-size: clamp(14px, 2vw, 0.9rem) !important;
+}
+
+.resumedownload:hover {
+    border: 2px solid var(--secondry-text-color);
+    background-color: var(--primary-color);
+}
+.resumedownload:hover a{
+    color: var(--primary-text-color);
+}
+
+.desig {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    font-size: 30px !important;
+    /* font-family: 'Montserrat', sans-serif; */
+}
+
+.ownername {
+    /* font-family: 'Roboto', sans-serif; */
+    font-size: clamp(34px, 5vw, 4rem);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.desig {
+    font-size: clamp(22px, 3vw, 6rem) !important;
+}
+
+.cap {
+    font-size: clamp(1rem, 1.2vw, 2rem);
+}
+
+
+.fishgif {
+    position: absolute;
+    right: 0;
+    bottom: 5rem;
+}
+
+.gellygif {
+    position: absolute;
+    top: 2rem;
+    left: -2rem;
+}
+
+.submirinegif {
+    position: absolute;
+    right: 8rem;
+    top: 4rem;
+}
+
+
+
+.circle-container {
+    position: relative;
+    left: -4rem;
+    bottom: -10px;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 600;
+    border: 1px solid;
+}
+
+.circle-text {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    transform: rotate(0deg);
+    animation: rotate 10s linear infinite;
+}
+
+.circle-text span {
+    position: absolute;
+    left: 50%;
+    transform-origin: 0 125px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.circle-text span:nth-child(1) {
+    transform: rotate(0deg);
+}
+
+.circle-text span:nth-child(2) {
+    transform: rotate(20deg);
+}
+
+.circle-text span:nth-child(3) {
+    transform: rotate(40deg);
+}
+
+.circle-text span:nth-child(4) {
+    transform: rotate(60deg);
+}
+
+.circle-text span:nth-child(5) {
+    transform: rotate(80deg);
+}
+
+.circle-text span:nth-child(6) {
+    transform: rotate(100deg);
+}
+
+.circle-text span:nth-child(7) {
+    transform: rotate(120deg);
+}
+
+.circle-text span:nth-child(8) {
+    transform: rotate(140deg);
+}
+
+.circle-text span:nth-child(9) {
+    transform: rotate(160deg);
+}
+
+.circle-text span:nth-child(10) {
+    transform: rotate(180deg);
+}
+
+.circle-text span:nth-child(11) {
+    transform: rotate(200deg);
+}
+
+.circle-text span:nth-child(12) {
+    transform: rotate(220deg);
+}
+
+.circle-text span:nth-child(13) {
+    transform: rotate(240deg);
+}
+
+.circle-text span:nth-child(14) {
+    transform: rotate(260deg);
+}
+
+.circle-text span:nth-child(15) {
+    transform: rotate(280deg);
+}
+
+.circle-text span:nth-child(16) {
+    transform: rotate(300deg);
+}
+
+.circle-text span:nth-child(17) {
+    transform: rotate(320deg);
+}
+
+.circle-text span:nth-child(18) {
+    transform: rotate(340deg);
+}
+
+
+.stamp {
+    position: absolute;
+    right: 0;
+    bottom: -3rem;
+}
+
+.contactmestrip {
+    padding: 15px 30px;
+    position: absolute;
+    left: -20px;
+    bottom: 0px;
+    background-color: black;
+    color: var(--primary-text-color);
+    letter-spacing: clamp(12px, 1.4vw, 4rem) !important;
+    z-index: 50;
+    border-radius: 5PX;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.inercircle {
+    position: absolute;
+    align-items: center;
+    height: 250px;
+    width: 250px;
+    border: 2px solid;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.6s ease;
+}
+
+.circle-container .arrimg {
+    display: block;
+}
+
+.arrimg {
+    transform: rotate(-45deg);
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .contactmestrip {
+        bottom: -25;
+    }
+}

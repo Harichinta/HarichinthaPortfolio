@@ -1,0 +1,52 @@
+.contactcnt{
+    color: var(--primary-text-color);
+}
+
+.contactsection{
+    border-top: 3px solid var(--cntborder-color);
+   border-bottom: 3px solid var(--cntborder-color);
+    min-height: 140px;
+    text-align: center;
+    padding-top: 3rem;
+    background-color: var(--alt-sec-color);
+    margin: 2rem 0;
+    color: var(--cntborder-color);
+}
+
+.Contacthead{
+    color: var(--primary-text-color);
+    font-size: 26px;
+    text-decoration: underline;
+}
+
+.cntdtls{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.cntdtls2{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.cntdtls div{
+   background-color: var(--primary-color);
+   padding: 10px 5px;
+   border-radius: 25px;
+   border: 1px solid var(--primary-text-color);
+}
+
+.cntdtls2 div{
+    background-color: var(--primary-color);
+    padding: 10px 5px;
+    border-radius: 25px;
+   border: 1px solid var(--primary-text-color);
+
+}
+
+.contactsection a{
+    color: var(--cntborder-color);
+    text-decoration: none;
+}
