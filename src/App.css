@@ -1,13 +1,7 @@
 :root {
   --primary-color:#050816  ; 
-
   --card-color: #050816;
   --alt-sec-color:#050816;
-
-
-  /* --alt-sec-color:#31323234; */
-  /* --primary-color:#151616;  */
-  /* --card-color: #0c0c0c; */
   --cntborder-color: rgba(255, 166, 0, 0.649);
   --secondry-color: rgb(0, 191, 255); 
   --Logobg-color:rgba(255, 166, 1, 0.878);

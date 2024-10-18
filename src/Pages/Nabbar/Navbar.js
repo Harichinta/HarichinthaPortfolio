@@ -37,7 +37,7 @@ function Navbar() {
     <div>
       <nav className={`navbar navbar-expand-lg navbar-light customnav ${isScrolled ? 'navblur' : ''}`}>
         <div className="container-fluid mx-auto" style={{ width: "90%" }}>
-          <span className="navbar-brand">HC</span><span className='brand'>Hari</span>
+          <span className="navbar-brand">HC</span><span className='brand'></span>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
