@@ -140,6 +140,40 @@ function About() {
     };
   }, [hasAnimated, isMobile]);
 
+
+  const experience = [
+    {
+      Jobtitle: "Software Engineer",
+      company: "Advent Global solutions",
+      startdate: "sep 2024",
+      existdate: "Till date",
+      location: "white feild, Kondapur, Hyderabad, Telangana ",
+      JD: "Highly skilled React TypeScript Developer with 2+ years of experience in building responsive, user-friendly web applications."
+    },
+    {
+      Jobtitle: "Software Engineer",
+      company: "Dataevolve Solutions Pvt Ltd",
+      startdate: "Aug 2022",
+      existdate: "July 2024",
+      location: "Madhapur, Hyderabad, Telangana, India",
+      JD: "As a Software Engineer, I developed and optimized both web and mobile applications, focusing on delivering high-performance, user-friendly experiences. "
+    }
+  ]
+
+
+  const ExperienceItem = ({ item, id }) => (
+    <li key={id} style={{ marginBottom: "1rem", display: "block" }}>
+      <p style={{ paddingLeft: "10px", fontSize: "22px", marginBottom: "0" }}>{item.jobTitle}</p>
+      <p style={{ paddingLeft: "10px", marginBottom: "0" }}>{item.company}</p>
+      <p style={{ paddingLeft: "10px", marginBottom: "0" }}>{item.startdate} {item.existdate ? ` - ${item.existdate}` : ''}</p>
+      <p style={{ paddingLeft: "10px", marginBottom: "0" }}>{item.location}</p>
+      <p style={{ paddingLeft: "10px", paddingLeft: "10px", marginTop: "10px", fontSize: "14px", marginBottom: "0" }}>
+        {item.JD}
+      </p>
+    </li>
+  );
+
+
   return (
     <div className='aboutmain'>
       <div className="row aboutcontain">
@@ -150,9 +184,7 @@ function About() {
             <span>_____</span>I'm Hari Venkatesh, a dedicated web developer with a passion for creating dynamic, responsive web applications that blend functionality with aesthetic appeal. With expertise in both front-end technologies like HTML5, CSS3, and JavaScript, and back-end development using Node.js and databases such as MySQL and MongoDB, I bring a full-stack approach to every project. My experience spans from small business websites to complex web applications, all with a focus on delivering high-quality code and innovative solutions tailored to client needs. I'm always eager to learn, collaborate, and take on new challenges in the ever-evolving world of web development.
           </p>
           <section className='row aboutrow'>
-            {/* Education Section */}
             {isMobile ? (
-              // Render static sections for mobile view
               <section className="col-md aboutsub card">
                 <h4>Education</h4>
                 <div className="subcard">
@@ -176,7 +208,6 @@ function About() {
                 </div>
               </section>
             ) : (
-              // Render motion section for larger screens
               <motion.section className="col-md aboutsub card"
                 ref={ref}
                 initial={{ x: '-100vw' }}
@@ -214,15 +245,10 @@ function About() {
                 <h4>Experience</h4>
                 <div className="subcard">
                   <ul>
-                    <li>
-                      <span style={{ fontSize: "22px" }}>Software Engineer</span> <br />
-                      <span>Dataevolve Solutions Pvt Ltd</span> <br />
-                      <span>Aug 2022 - July 2024</span> <br />
-                      <span>Madhapur, Hyderabad, Telangana, India</span>
-                      <p style={{ paddingLeft: "10px", marginTop: "10px", fontSize: "14px" }}>
-                        As a Software Engineer, I developed and optimized both web and mobile applications, focusing on delivering high-performance, user-friendly experiences. My role involved collaborating with diverse teams to create innovative solutions that meet client needs and adhere to industry best practices.
-                      </p>
-                    </li>
+                    {experience.map((item, index) => (
+                      <ExperienceItem item={item} key={index} />
+                    ))}
+
                   </ul>
                 </div>
               </section>
@@ -235,16 +261,10 @@ function About() {
               >
                 <h4>Experience</h4>
                 <div className="subcard">
-                  <ul>
-                    <li>
-                      <span style={{ fontSize: "22px" }}>Software Engineer</span> <br />
-                      <span>Dataevolve Solutions Pvt Ltd</span> <br />
-                      <span>Aug 2022 - July 2024</span> <br />
-                      <span>Madhapur, Hyderabad, Telangana, India</span>
-                      <p style={{ paddingLeft: "10px", marginTop: "10px", fontSize: "14px" }}>
-                        As a Software Engineer, I developed and optimized both web and mobile applications, focusing on delivering high-performance, user-friendly experiences. My role involved collaborating with diverse teams to create innovative solutions that meet client needs and adhere to industry best practices.
-                      </p>
-                    </li>
+                  <ul style={{ marginBottom: "0" }}>
+                    {experience.map((item, index) => (
+                      <ExperienceItem item={item} key={index} />
+                    ))}
                   </ul>
                 </div>
               </motion.section>
