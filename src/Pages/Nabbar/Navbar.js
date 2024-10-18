@@ -44,7 +44,7 @@ function Navbar() {
           <div className="collapse navbar-collapse" id="navbarText" ref={navRef}>
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className={`nav-link ${activeId === 1 ? 'navactive' : ''}`} onClick={() => handleNavLinkClick(1)} aria-current="page" href="#">Home</a>
+                <a className={`nav-link ${activeId === 1 ? 'navactive' : ''}`} onClick={() => handleNavLinkClick(1)} aria-current="page" href="#home">Home</a>
               </li>
               <li className="nav-item">
                 <a className={`nav-link ${activeId === 2 ? 'navactive' : ''}`} onClick={() => handleNavLinkClick(2)} href="#About">About</a>

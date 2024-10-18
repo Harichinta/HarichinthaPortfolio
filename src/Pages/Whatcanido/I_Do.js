@@ -108,7 +108,7 @@ import mobileimgbg from '../../Source/mbimg.png'
 import laptopimgbg from '../../Source/laptopimg.png'
 import { motion } from 'framer-motion';
 
-function I_Do() {
+function Ido() {
     const [hasAnimated, setHasAnimated] = useState(false);
     const [hasAnimated2, setHasAnimated2] = useState(false);
     const [isMobile, setIsMobile] = useState(false); // State to track mobile view
@@ -212,4 +212,4 @@ function I_Do() {
     )
 }
 
-export default I_Do
+export default Ido

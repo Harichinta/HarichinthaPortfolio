@@ -30,10 +30,10 @@ function Contact() {
                         <div><a href="https://github.com/Harichinta" target='blank'><img src={Githublog} alt="" width="20px" /><span style={{marginLeft:"10px"}}>GitHub</span></a></div>
                     </section>
                     <a href='https://www.linkedin.com/in/hari9100' target='blank'><img src={linkedinlogo} alt="" width="82px" /></a>
-                    <a href="https://wa.me/9100251660" target="_blank">
+                    <a href="https://wa.me/9100251660" target="_blank" rel="noreferrer">
                         <img src={whatsappicon} alt="WhatsApp" width="36px" />
                     </a>
-                    <a style={{marginLeft:"16px"}} href={resumepath} download="Hari_Venkatesh_Resume.pdf" target="_blank">
+                    <a style={{marginLeft:"16px"}} href={resumepath} download="Hari_Venkatesh_Resume.pdf" target="_blank" rel="noreferrer">
                         <img src={Resumedownload} alt="WhatsApp" width="36px" />
                     </a>
                 </section>

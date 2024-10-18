@@ -7,7 +7,7 @@ import downarrow from '../../Source/source.gif'
 import portfoliopic from '../../Source/codingpersion-removebg-preview.png'
 import Projects from '../Projects/Projects'
 import Contact from '../Contact/Contact'
-import I_Do from '../Whatcanido/I_Do'
+import Ido from '../Whatcanido/I_Do'
 import arrowcircle from '../../Source/circlearr.svg'
 import resumepath from '../../Source/Hari_Venkatesh_Chintha_3.pdf'
 import downloadingres from '../../Source/downloadingresgif.gif'
@@ -55,7 +55,7 @@ function Home() {
 
     return (
         <>
-            <div className='maincontainer' >
+            <div className='maincontainer' id='home' >
                 <div className="row p-4">
                     <section className="col-md"></section>
                     <section className='col-md-6 herosection'>
@@ -113,7 +113,7 @@ function Home() {
             </section>
 
             <section id='I_Do'>
-                <I_Do />
+                <Ido />
             </section>
 
             <section id='skills'>

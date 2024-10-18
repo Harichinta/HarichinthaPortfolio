@@ -1,10 +1,5 @@
 import React from 'react'
 import './Projects.css'
-import publicportal from "../../Source/gailgaspublic.jpg"
-import publicadmin from "../../Source/cngadmin.jpg"
-import Gailtenders from "../../Source/Gailtenders.jpg"
-import Dataevolve from "../../Source/dataevolve.jpeg"
-import Workpermit from "../../Source/workpermit.jpg"
 import helloclick from "../../Source/hello-click-here.gif"
 
 function Projects() {
